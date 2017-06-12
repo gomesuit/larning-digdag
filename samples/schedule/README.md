@@ -1,0 +1,15 @@
+- `daily>: HH:MM:SS`
+  - 毎日HH:MM:SSにジョブを実行
+- `hourly>: MM:SS`
+  - 毎時間MM:SSにジョブを実行
+- `weekly>: DDD,HH:MM:SS`
+  - 毎週DDD曜日のHH:MM:SSにジョブを実行
+- `monthly>: D,HH:MM:SS`
+  - 毎月D日のHH:MM:SSにジョブを実行
+- `minutes_interval>: MM`
+  - MM分毎にジョブを実行
+- `cron>: 42 4 1 * *`
+  - クーロン形式でスケジュールを指定して実行
+
+- スケジューラのステータス確認
+  - `digdag check`
