@@ -1,0 +1,10 @@
+/opt/digdag/logs/*.log
+/opt/digdag/accesslogs/*.log {
+    create 0644 digdag digdag
+    daily
+    rotate 10
+    missingok
+    notifempty
+    copytruncate
+    compress
+}

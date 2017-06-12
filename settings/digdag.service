@@ -1,0 +1,12 @@
+[Unit]
+Description=digdag
+
+[Service]
+User=digdag
+Restart=always
+TimeoutStartSec=30s
+Type=simple
+ExecStart=/usr/local/etc/digdag/start.bash
+
+[Install]
+WantedBy=multi-user.target
