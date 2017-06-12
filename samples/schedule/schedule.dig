@@ -1,0 +1,10 @@
+timezone: Asia/Tokyo
+
+schedule:
+  minutes_interval>: 1
+
++current_date:
+  sh>: echo `date`
+
++echo_hello:
+  sh>: echo hello
