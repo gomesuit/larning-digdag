@@ -43,9 +43,11 @@ cp -f /home/vagrant/synced/settings/pg_hba.conf /var/lib/pgsql/9.6/data/pg_hba.c
 systemctl start postgresql-9.6
 
 # create database for digdag
-sudo -u postgres psql -c "CREATE ROLE digdag WITH PASSWORD 'digdagpass' NOSUPERUSER NOCREATEDB NOCREATEROLE LOGIN;"
-sudo -u postgres psql -c "CREATE DATABASE digdag_db WITH OWNER digdag;"
+#sudo -u postgres psql -c "CREATE ROLE digdag WITH PASSWORD 'digdagpass' NOSUPERUSER NOCREATEDB NOCREATEROLE LOGIN;"
+#sudo -u postgres psql -c "CREATE DATABASE digdag_db WITH OWNER digdag;"
 #sudo -u postgres psql -c 'CREATE EXTENSION "uuid-ossp";'
+#sudo -u postgres createuser -s digdag -P
+#sudo -u postgres createdb digdag_db -O digdag
 
 # setting service
 cp /home/vagrant/synced/settings/digdag.service /etc/systemd/system/
