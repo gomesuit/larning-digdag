@@ -13,3 +13,11 @@
 
 - スケジューラのステータス確認
   - `digdag check`
+- スケジューラの起動
+  - `digdag scheduler`
+  - `http://127.0.0.1:65432/`
+- タスクの確認
+  - `digdag task 1`
+- 結果の確認(sessions)
+  - `digdag sessions`
+  - `digdag sessions 1`
