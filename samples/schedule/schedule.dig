@@ -3,6 +3,12 @@ timezone: Asia/Tokyo
 schedule:
   minutes_interval>: 1
 
+# 20分以内に終わらなければ警告
+sla:
+  duration: 00:20:00
+  +notice:
+    sh>: echo notice
+
 +current_date:
   sh>: echo `date`
 
