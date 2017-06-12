@@ -1,0 +1,11 @@
+- サーバの起動
+  - `digdag server -m`
+- プロジェクトの登録
+  - `digdag push <プロジェクト名>`
+- 登録したプロジェクトの確認
+  - `digdag workflows`
+- 登録したプロジェクトの起動
+  - `digdag start <プロジェクト名> <ワークフロー名> --session now`
+  - `digdag start sample digdag-client-sample --session <hourly | daily | now | "yyyy-MM-dd[ HH:mm:ss]">`
+- ログの確認
+  - `digdag sessions`
