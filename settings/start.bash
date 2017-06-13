@@ -9,9 +9,10 @@ exec 2>&1
 #export PATH="/home/uu59/.rbenv/shims:$PATH"
 
 which -a java
-which -a ruby
+#which -a ruby
 
 exec /usr/local/bin/digdag server \
+  -b 0.0.0.0 \
   -o /usr/local/var/log/digdag/ \
   -O /usr/local/var/log/digdag/tasklogs \
   -A /usr/local/var/log/digdag/accesslogs \

@@ -48,9 +48,9 @@ systemctl start postgresql-9.6
 #sudo -u postgres psql -c 'CREATE EXTENSION "uuid-ossp";'
 #sudo -u postgres createuser -s digdag -P
 #sudo -u postgres createdb digdag_db -O digdag
-#http://qiita.com/tomlla/items/9fa2feab1b9bd8749584
 
 # setting service
 cp /home/vagrant/synced/settings/digdag.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable digdag
+systemctl start digdag
