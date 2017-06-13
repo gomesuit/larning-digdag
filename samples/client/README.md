@@ -2,6 +2,7 @@
   - `digdag server -m`
 - プロジェクトの登録
   - `digdag push <プロジェクト名>`
+  - `digdag push -e http://192.168.33.10:65432/ client`
 - 登録したプロジェクトの確認
   - `digdag workflows`
 - 登録したプロジェクトの起動
