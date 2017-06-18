@@ -1,11 +1,24 @@
 version: '2'
 services:
-  server1:
+  api1:
     build:
-      context: docker
+      context: docker/api
       dockerfile: Dockerfile
-      #command: server --config postgresql.properties
     ports:
       - "127.0.0.1:65432:65432"
+  api2:
+    build:
+      context: docker/api
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:65433:65432"
+  executor1:
+    build:
+      context: docker/executor
+      dockerfile: Dockerfile
+  executor2:
+    build:
+      context: docker/executor
+      dockerfile: Dockerfile
   postgres:
     image: postgres:9.5.6-alpine
