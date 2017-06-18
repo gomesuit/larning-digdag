@@ -6,12 +6,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "127.0.0.1:65432:65432"
-  api2:
-    build:
-      context: docker/api
-      dockerfile: Dockerfile
-    ports:
-      - "127.0.0.1:65433:65432"
   executor1:
     build:
       context: docker/executor
